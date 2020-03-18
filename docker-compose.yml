@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  bokeh:
+    image: test_open_tabs_bokeh
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
+    ports:
+      - "5007:5007"
