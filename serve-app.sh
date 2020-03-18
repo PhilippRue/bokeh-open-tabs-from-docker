@@ -9,7 +9,7 @@ set -x
 #===============================================================================
 
 # now serve the app (uses bokeh server in the background)
-panel serve test-app/app1 test-app/app2 \
+panel serve test-app/app1 test-app/app2 test-app/app3 \
     --port 5007                 \
     --log-level debug           \
     --allow-websocket-origin "*" \
